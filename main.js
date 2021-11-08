@@ -72,8 +72,7 @@ const words = [
         word_input.value=""
         display_words(words) 
         time=current_level+1;
-        isPlaying=true
-        score++;   
+           score++;   
      }
      display_score.innerHTML=score
  }
@@ -107,5 +106,7 @@ function countdown()
 function checkstatus(){
         if(isPlaying='false' && time==0){
     message.innerHTML="Game Over !!!"
+    //display_words(words)
+
     }
 }
